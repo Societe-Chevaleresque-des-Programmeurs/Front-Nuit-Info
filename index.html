@@ -43,18 +43,6 @@
         </div>
 
         <script>
-            function load_part(page) {
-                fetch("./parcours/"+page+".html")
-                .then(response => response.text())
-                .then(data => {
-                    document.getElementById("content").innerHTML = data;
-                    animateElementsFI()
-
-                })
-                .catch(error => {
-                    console.error("Une erreur s'est produite lors du chargement de la partie : " + error);
-                });
-            };
         </script>
 
     </body>

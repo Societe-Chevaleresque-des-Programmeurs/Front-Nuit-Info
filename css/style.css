@@ -184,3 +184,27 @@ a:hover {
     color: #8707ff;
     cursor: pointer;
 }
+
+.question_form {
+    display: flex;
+    flex-direction: row;
+}
+
+.question_form input {
+    color: greenyellow;
+    border: 2px solid green;
+    border-radius: 2px;
+    padding: 90px 140px;
+    margin: 8px;
+    font-size: 1.2rem;
+    text-align: center;
+    transition: all 0.5s ease-out;
+}
+
+.question_form .vrai input {
+    background: red;
+}
+
+.vrai input:hover {
+    background: turquoise;
+}
