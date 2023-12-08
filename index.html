@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" id="html">
     <head>
         <title>Nuit de l'Info</title>
         <meta charset="UTF-8">
@@ -7,6 +7,7 @@
         <script src="https://kit.fontawesome.com/9e5fc47a4e.js" crossorigin="anonymous"></script>
         <link href="css/style.css" rel="stylesheet">
     </head>
+    <body>
     <div class="header">
         
         <h1 style="text-align: center;"><img width="150" src="./assets/StonksClimaCare.png"><span>N</span><span>u</span><span>i</span><span>t</span> <span>d</span><span>e</span>  <span>l</span><span>'</span><span>I</span><span>n</span><span>f</span><span>o</span> <span>2</span><span>0</span><span>2</span><span>3</span></h1>
@@ -15,7 +16,8 @@
             <li><a href="./parcours.html"><i class="fa-brands fa-pagelines"></i></a></li>
             <li><a href="./login.html"><i style="width: auto;" class="fa-regular fa-circle-user"></i></a></li>
         </ul>
-    </div id="content" class="content">
+
+        </div id="content" class="content">
 
         <div class="main" id="Comprendre">
             <h1>Comprendre le changement climatique :</h1>
@@ -44,6 +46,19 @@
         </div>
 
         <script>
+            function load_part(page) {
+                fetch(page+".html")
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById("html").innerHTML = data;
+                    animateElementsFI()
+
+                })
+                .catch(error => {
+                    console.error("Une erreur s'est produite lors du chargement de la partie : " + error);
+                });
+            };
+
         </script>
 
     </body>
