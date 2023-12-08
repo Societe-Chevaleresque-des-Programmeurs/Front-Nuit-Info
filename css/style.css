@@ -35,10 +35,14 @@ body {
     width: 100%;
 }
 .header h1 {
-    text-align: center;
+    display: flex;
     margin: 0;
     padding: 10px;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
 }
+
 .header h1 span {
     transition: 1.2s;
     text-shadow: darkgreen 3px 3px 2px;;
@@ -79,7 +83,7 @@ body {
     padding: 15px;
     flex-direction: column;
     font-size: 1.5em;
-    height: 100%;
+    height: max-content;
     font-family: 'Courier New', Courier, monospace;
     letter-spacing: normal;
 }
@@ -126,7 +130,7 @@ body {
 form {
     position: absolute;
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
@@ -144,7 +148,7 @@ form label {
     color: green;
 }
 
-form input {
+input  {
     color: greenyellow;
     border: 2px solid green;
     background: white;
@@ -163,12 +167,6 @@ form input:focus {
     box-shadow: 2px 2px 15px #79F3A2 inset;
    }
 
-form input[type="submit"]:hover{
-    box-shadow: 2px 2px 15px #79F3A2 inset;
-    background: turquoise;
-    color: green;
-}
-   
 form h2 { 
     color: greenyellow;
     margin-top: 25px;
@@ -204,7 +202,7 @@ a:hover {
 .question_form .vrai input {
     background: red;
 }
-
-.vrai input:hover {
-    background: turquoise;
+input:hover {
+    box-shadow: 10px 5px 5px greenyellow;
+    color: #8707ff;
 }

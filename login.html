@@ -7,7 +7,7 @@
         <script src="https://kit.fontawesome.com/9e5fc47a4e.js" crossorigin="anonymous"></script>
         <link href="css/style.css" rel="stylesheet">
     </head>
-    <body>
+    <body onload="window.alert('C\'est désastreux !')">
     <div class="header">
         <h1 style="text-align: center;"><span>N</span><span>u</span><span>i</span><span>t</span> <span>d</span><span>e</span> <span>l</span><span>'</span><span>I</span><span>n</span><span>f</span><span>o</span> <span>2</span><span>0</span><span>2</span><span>3</span></h1>
         <ul>
@@ -18,14 +18,13 @@
     </div>
     
         <div class="login_form">
-            <form action="./" method="¨POST">
+            <form action="./login.php" method="¨POST">
                 <h2><label>Nom :</label></h2>
-                <input type="text" name="username" placeholder="Nom d'utilisateur">
+                <input type="text" name="pseudo" placeholder="Nom d'utilisateur">
                 <h2><label>Mot de Passe</label></h2>
-                <input type="password" name="password" placeholder="Mot de passe">
-                <input type="submit" name="submit">
-            </form>
+                <input type="password" name="password" placeholder="Mot de passe">       
         </div>
-
+            <input type="submit" name="submit">
+            </form>
     </body>
 </html>
